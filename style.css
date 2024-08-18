@@ -1,0 +1,105 @@
+:root {
+  /* Color */
+  --slate-900: #1f314f;
+  --slate-500: #68778d;
+  --slate-300: #d5e1ef;
+
+  /* Typography */
+  --text-preset-1-font-size: 22px;
+  --text-preset-1-line-height: 120%;
+  --text-preset-1-letter-spacing: 0px;
+  --text-preset-1-font-weight: bold;
+
+  --text-preset-font-family: "Outfit", sans-serif;
+
+  --text-preset-2-font-size: 15px;
+  --text-preset-2-line-height: 140%;
+  --text-preset-2-letter-spacing: 0.2px;
+  --text-preset-2-font-weight: normal;
+
+  /* Spacing */
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--text-preset-font-family);
+}
+
+body {
+  background-color: var(--slate-300);
+  position: relative;
+}
+
+main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Content */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 16px 40px;
+  gap: 24px;
+
+  width: 320px;
+  height: 499px;
+
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+  border-radius: 20px;
+
+  > img {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-200);
+    padding: 10px;
+    > h2 {
+      text-align: center;
+      text-wrap: nowrap;
+      font-size: var(--text-preset-1-font-size);
+      font-weight: var(--text-preset-1-font-weight);
+      line-height: var(--text-preset-1-line-height);
+      letter-spacing: var(--text-preset-1-letter-spacing);
+    }
+    > p {
+      color: #68778d;
+      text-align: center;
+      font-size: var(--text-preset-2-font-size);
+      font-weight: var(--text-preset-2-font-weight);
+      line-height: var(--text-preset-2-line-height);
+      letter-spacing: var(--text-preset-2-letter-spacing);
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
