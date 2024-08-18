@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap");
+
 :root {
   /* Color */
   --slate-900: #1f314f;
@@ -27,12 +29,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: var(--text-preset-font-family);
 }
 
 body {
   background-color: var(--slate-300);
   position: relative;
+  font-family: var(--text-preset-font-family);
 }
 
 main {
@@ -74,7 +76,6 @@ main {
     padding: 10px;
     > h1 {
       text-align: center;
-      text-wrap: nowrap;
       font-size: var(--text-preset-1-font-size);
       font-weight: var(--text-preset-1-font-weight);
       line-height: var(--text-preset-1-line-height);
