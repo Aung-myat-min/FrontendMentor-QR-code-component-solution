@@ -52,7 +52,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   padding: 16px 16px 40px;
-  gap: 24px;
+  gap: 20px;
 
   width: 320px;
   height: 499px;
@@ -72,7 +72,7 @@ main {
     justify-content: center;
     gap: var(--spacing-200);
     padding: 10px;
-    > h2 {
+    > h1 {
       text-align: center;
       text-wrap: nowrap;
       font-size: var(--text-preset-1-font-size);
